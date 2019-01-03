@@ -14,17 +14,37 @@
         header{
             background-color: #2d7c82;
             color: #ffffff;
-            height: 64px;
+            height: 100vh;
             line-height: 64px;
             text-align: center;
+        }
+
+        aside{
+            display: inline-block;
+            width: 400px;
+            height: 200px;
+            background-color: beige;
+        }
+
+        article{
+            display: inline-block;
+            width: calc(100% - 406px);
+            height: 200px;
+            background-color: blanchedalmond;
         }
 
         nav{
             background-color: azure;
         }
 
+        .table-display table{
+            width: 100%;
+        }
+
         footer{
-            background-color: azure;
+            width: 100%;
+            background-color: brown;
+            color: #FFFFFF;
         }
     </style>
 </head>
@@ -35,8 +55,21 @@
     <nav>
         nav
     </nav>
+    <aside>aside</aside>
     <article>
-        <section>section</section>
+        <section class="table-display">
+            section
+            <table>
+                <tr>
+                    <td>123</td>
+                    <td>456</td>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>456</td>
+                </tr>
+            </table>
+        </section>
     </article>
     <footer>
         footer
